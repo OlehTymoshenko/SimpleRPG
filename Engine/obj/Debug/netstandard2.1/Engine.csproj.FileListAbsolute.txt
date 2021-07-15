@@ -1,0 +1,9 @@
+C:\Users\olegt\source\repos\SimpleRPG\Engine\bin\Debug\netstandard2.1\Engine.deps.json
+C:\Users\olegt\source\repos\SimpleRPG\Engine\bin\Debug\netstandard2.1\Engine.dll
+C:\Users\olegt\source\repos\SimpleRPG\Engine\bin\Debug\netstandard2.1\Engine.pdb
+C:\Users\olegt\source\repos\SimpleRPG\Engine\obj\Debug\netstandard2.1\Engine.g.resources
+C:\Users\olegt\source\repos\SimpleRPG\Engine\obj\Debug\netstandard2.1\Engine.AssemblyInfoInputs.cache
+C:\Users\olegt\source\repos\SimpleRPG\Engine\obj\Debug\netstandard2.1\Engine.AssemblyInfo.cs
+C:\Users\olegt\source\repos\SimpleRPG\Engine\obj\Debug\netstandard2.1\Engine.csproj.CoreCompileInputs.cache
+C:\Users\olegt\source\repos\SimpleRPG\Engine\obj\Debug\netstandard2.1\Engine.dll
+C:\Users\olegt\source\repos\SimpleRPG\Engine\obj\Debug\netstandard2.1\Engine.pdb
