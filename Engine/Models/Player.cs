@@ -1,5 +1,8 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Linq;
 
 namespace Engine.Models
 {
@@ -12,9 +15,11 @@ namespace Engine.Models
         private int _level;
         private int _gold;
 
-        public ObservableCollection<GameItem> Inventory { get; set; } = new ObservableCollection<GameItem>();
+        public ObservableCollection<GameItem> Inventory { get; private set; } = new ObservableCollection<GameItem>();
 
-        public ObservableCollection<QuestStatus> Quests { get; set; } = new ObservableCollection<QuestStatus>();
+        public ObservableCollection<QuestStatus> Quests { get; private set; } = new ObservableCollection<QuestStatus>();
+
+        public List<Weapon> Weapons => Inventory.Where(i => i is Weapon).Cast<Weapon>().ToList();
 
         public string Name
         {
@@ -74,6 +79,12 @@ namespace Engine.Models
                 _gold = value;
                 OnPropertyChanged(nameof(Gold));
             }
+        }
+
+        public void AddItemToInventory(GameItem gameItem)
+        {
+            Inventory?.Add(gameItem);
+            OnPropertyChanged(nameof(Weapons));
         }
     }
 }

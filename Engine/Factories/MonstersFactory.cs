@@ -12,7 +12,7 @@ namespace Engine.Factories
             switch (id)
             {
                 case 1:
-                    createdMonster  = new Monster("Snake", "Snake.png", 4, 4, 5, 1);
+                    createdMonster  = new Monster("Snake", "Snake.png", 4, 4, 1, 2, 5, 1);
 
                     AddLootToMonster(createdMonster, new ItemQuantity(9001, 1), 25);
                     AddLootToMonster(createdMonster, new ItemQuantity(9002, 1), 75);
@@ -20,7 +20,7 @@ namespace Engine.Factories
                     break;
 
                 case 2:
-                    createdMonster = new Monster("Rat", "Rat.png", 5, 5, 5, 1);
+                    createdMonster = new Monster("Rat", "Rat.png", 5, 5, 1, 3, 5, 1);
 
                     AddLootToMonster(createdMonster, new ItemQuantity(9003, 1), 25);
                     AddLootToMonster(createdMonster, new ItemQuantity(9004, 1), 75);
@@ -28,7 +28,7 @@ namespace Engine.Factories
                     break;
 
                 case 3:
-                    createdMonster = new Monster("Giant Spider", "GiantSpider.png", 10, 10, 10, 3);
+                    createdMonster = new Monster("Giant Spider", "GiantSpider.png", 10, 10, 2, 5, 10, 3);
 
                     AddLootToMonster(createdMonster, new ItemQuantity(9005, 1), 25);
                     AddLootToMonster(createdMonster, new ItemQuantity(9006, 1), 75);

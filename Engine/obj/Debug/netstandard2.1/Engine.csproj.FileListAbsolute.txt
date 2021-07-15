@@ -7,3 +7,4 @@ C:\Users\olegt\source\repos\SimpleRPG\Engine\obj\Debug\netstandard2.1\Engine.Ass
 C:\Users\olegt\source\repos\SimpleRPG\Engine\obj\Debug\netstandard2.1\Engine.csproj.CoreCompileInputs.cache
 C:\Users\olegt\source\repos\SimpleRPG\Engine\obj\Debug\netstandard2.1\Engine.dll
 C:\Users\olegt\source\repos\SimpleRPG\Engine\obj\Debug\netstandard2.1\Engine.pdb
+C:\Users\olegt\source\repos\SimpleRPG\Engine\obj\Debug\netstandard2.1\Engine.csprojAssemblyReference.cache

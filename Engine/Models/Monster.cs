@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Text;
+﻿using System.Collections.ObjectModel;
 
 namespace Engine.Models
 {
@@ -19,7 +16,7 @@ namespace Engine.Models
         {
             get { return _hitPoints; }
 
-            private set
+            internal set
             {
                 _hitPoints = value;
                 OnPropertyChanged(nameof(HitPoints));
@@ -30,20 +27,26 @@ namespace Engine.Models
 
         public int RewardGold { get; private set; }
 
-        public ObservableCollection<ItemQuantity> Inventory { get; set; }
+        public ObservableCollection<ItemQuantity> Inventory { get; set; } = new ObservableCollection<ItemQuantity>();
+
+        public int MinDamage { get; set; }
+
+        public int MaxDamage { get; set; }
+
 
         public Monster(string name, string imageName,
             int maximumHitPoints, int hitPoints,
+            int minDamage, int maxDamage,
             int rewardExperiencePoints, int rewardGold)
         {
             Name = name;
             ImageName = $"pack://application:,,,/Engine;component/Images/Monsters/{imageName}";
             MaximumHitPoints = maximumHitPoints;
             HitPoints = hitPoints;
+            MinDamage = minDamage;
+            MaxDamage = maxDamage;
             RewardExperiencePoints = rewardExperiencePoints;
             RewardGold = rewardGold;
-
-            Inventory = new ObservableCollection<ItemQuantity>();
         }
     }
 }

@@ -21,7 +21,7 @@ namespace Engine.Models
         }
 
 
-        public GameItem DeepClone()
+        public  GameItem DeepClone()
         {
             return new GameItem(ItemTypeId, Name, Price);
         }

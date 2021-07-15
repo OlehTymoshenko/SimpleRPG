@@ -22,21 +22,24 @@ namespace Engine.Factories
             _standardGameItems.Add(new GameItem(9004, "Rat fur", 2));
             _standardGameItems.Add(new GameItem(9005, "Spider fang", 1));
             _standardGameItems.Add(new GameItem(9006, "Spider silk", 2));
-
         }
 
         internal static GameItem CreateGameItem(int itemTypeId)
         {
             var gameItem = _standardGameItems.FirstOrDefault(i => i.ItemTypeId == itemTypeId);
 
+            // TODO: refactor this via polymorphism
             if(gameItem != null )
             {
-                return gameItem;
+                if(gameItem is Weapon)
+                {
+                    return (gameItem as Weapon).DeepClone();
+                }
+
+                return gameItem.DeepClone();
             }
 
             return null;
         }
-
-
     }
 }
